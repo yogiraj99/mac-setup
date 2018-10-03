@@ -52,12 +52,6 @@ brew install git
 
 echo $name | sh -c "$(curl -fsSL https://raw.githubusercontent.com/nrjais/oh-my-zsh/master/tools/install.sh)"
 
-echo "Installing vim";
-git clone --depth=1 https://github.com/nrjais/vimrc.git ~/.vim_runtime
-
-sh ~/.vim_runtime/install.sh
-sh ~/.vim_runtime/install_awesome_vimrc.sh
-
 echo "Installing docker"
 brew install docker
 brew cask install docker
