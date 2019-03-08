@@ -6,13 +6,8 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -nv true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-#Ask for name to use in oh my zsh
-echo "\n\nEnter name to display in prompt"
-read name
-while [ -z "$name" ]
-do
-  read name
-done
+#Set name to use in oh my zsh
+name=yogi
 
 
 # Check for Homebrew,
